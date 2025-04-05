@@ -1,0 +1,7 @@
+.logo {
+    position: absolute;
+    top: 5px; /* Move mais para cima */
+    left: 10px; /* Move para a borda esquerda */
+    width: 150px; /* Diminui a imagem */
+    height: auto;
+}

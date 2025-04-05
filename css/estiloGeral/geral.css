@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .menu ul li {
+        margin: 5px 0;
+    }
+
+    main nav ul {
+        flex-direction: column;
+    }
+}
+article {
+    background-color: #1e1e1e; /* Tom mais suave de preto */
+    color: #fff; /* Texto branco para contraste */
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais forte para profundidade */
+    max-width: 800px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação suave para interação */
+}
+
+/* Efeito de hover para dar feedback visual ao usuário */
+article:hover {
+    transform: translateY(-5px); /* Leve movimento para cima */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
+}
+
+/* Estilo para o título */
+article h2 {
+    font-size: 28px;
+    color: #FFD700; /* Cor dourada para destacar o título */
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo para as listas */
+article ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article ul li {
+    font-size: 16px;
+    color: #ccc; /* Cor mais suave para o texto */
+    padding-left: 25px;
+    position: relative;
+    margin: 10px 0;
+}
+
+/* Adicionando um ícone personalizado antes de cada item da lista */
+article ul li::before {
+    content: "✔";
+    color: #FFD700; /* Cor dourada para os ícones */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 600px) {
+    article {
+        padding: 15px;
+    }
+
+    article h2 {
+        font-size: 24px;
+    }
+
+    article ul li {
+        font-size: 14px;
+    }
+}

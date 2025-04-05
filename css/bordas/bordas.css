@@ -1,0 +1,30 @@
+.bordas-amarelas {
+    width: 200px;
+    height: auto;
+    border: 5px solid yellow;
+    padding: 5px;
+    border-radius: 10px;
+}
+/*
+/* Estilização dos textos 
+.game-info strong {
+    color: #ffcc00;
+}
+
+/* Configuração da lista 
+ul {
+    list-style-type: none; /* Remove os marcadores 
+    padding: 0;
+}
+
+/* Estilização dos itens da lista 
+li {
+    padding: 5px;
+    border-bottom: 1px solid #ddd; /* Linha entre os itens 
+}
+
+/* Remove a linha do último item 
+li:last-child {
+    border-bottom: none;
+}
+*/

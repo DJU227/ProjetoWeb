@@ -1,0 +1,31 @@
+/* Linha divisória com gradiente sutil */
+hr {
+    border: none;
+    height: 3px;
+    background: linear-gradient(to right, rgb(255, 42, 5), rgb(255, 122, 14), rgb(255, 199, 14));
+    margin: 15px 0;
+    border-radius: 3px;
+}
+
+/* Lista mais organizada */
+ul {
+    list-style: square; /* Mantém os marcadores quadrados */
+    padding-left: 20px; /* Ajuste no espaçamento à esquerda */
+    margin: 10px 0; /* Margem mais discreta */
+}
+
+/* Itens da lista com espaçamento adequado */
+ul li {
+    font-size: 16px; /* Tamanho de texto equilibrado */
+    margin-bottom: 5px; /* Espaço entre os itens */
+}
+
+/* Efeito sutil ao passar o mouse */
+ul li:hover {
+    color: rgb(255, 122, 14); /* Apenas muda a cor do texto */
+    cursor: pointer;
+}
+ul {
+    list-style-type: none; /* Remove os marcadores */
+    padding: 0;
+}
