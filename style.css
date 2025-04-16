@@ -5,36 +5,37 @@ html {
 }
 
 body {
-    height: 100dvh;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: blue;
     margin-bottom: 10px;
-    padding: 0 15px;
+    width: 100%;
+    
 }
 
 header img {
     width: 60px;
 }
 
-nav {
-
-    height: 790px;
-    background-color: white;
-    margin-bottom: 5px;
+article {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 15px 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px;
+    background-color: red;
+    color: white;
+    margin: 100px 5px 15px 110px;
+    border-radius: 10px;
+    border: 2px solid black;
+    height: 300%;
 }
 
 article ul {
@@ -44,26 +45,77 @@ article ul {
     font-weight: bold;
     padding: 10px;
 }
+main {
+    flex: 1;
+    display: flex;
+
+}
+.main-layout {
+    display: flex;
+    align-items: flex-start;
+}
+
+nav{
+    margin-top: 80px;
+    width: 80px;    
+    background-color: white;
+    position: fixed;
+    height: 100%;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 red;
+    transition: 0.5s;
+    overflow: hidden;
+}
+nav.expandir {
+    width: 280px; 
+}
+
+#botaoMenu{
+    width: auto;
+    height: 80px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+}
+nav ul li.ativo{
+background-color: lab(39.42% 1.26 -41.2 / 0.733);
+    
+}
+nav ul li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    white-space: nowrap;
+    transition: background-color 0.8s ease; 
+    
+}
+
+nav ul li:hover {
+    background-color: #ee5959;
+}
 
 nav ul li img {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    margin-right: 40px;
 }
+
+.conteudo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
 
 main {
     display: flex;
 }
 
-article {
-    display: flex;
-    flex-direction: column;
-    background-color: red;
-    color: white;
-    margin: 0 5px 15px;
-    border-radius: 10px;
-    border: 2px solid black;
-}
+
 
 .tituloH3 {
     background: blue;
@@ -72,6 +124,7 @@ article {
     list-style: none;
 }
 section {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -91,7 +144,6 @@ h3 {
     left: 8.5%;
 }
 */
-
 
 .editais {
     display: flex;

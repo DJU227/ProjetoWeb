@@ -15,16 +15,21 @@
         </form>
     </header>
 
-    <main>
-        <nav>
-            <ul>
-                <li><img src="logo.jpg" alt="Ícone Home"> Home</li>
-                <li><img src="logo.jpg" alt="Ícone Participação"> Participação</li>
-                <li><img src="logo.jpg" alt="Ícone Ganhos"> Ganhos</li>
-                <li><img src="logo.jpg" alt="Ícone Finalizados"> Finalizados</li>
+    <main class="main-layout">
+        <div class="sidebar-container">
+            <nav class="menu-lateral">
+                <div class="btn-expandir">
+                    <img src="logo.jpg" alt="" id="botaoMenu">
+                </div>
+                <ul>
+                <li class="item-menu ativo">
+                <img src="logo.jpg" alt=""><a href="home.html">Home</a></li>
+                <li class="item-menu"><img src="logo.jpg" alt="Ícone Participação"> Participação</li>
+                <li class="item-menu"><img src="logo.jpg" alt="Ícone Ganhos"> Ganhos</li>
+                <li class="item-menu"><img src="logo.jpg" alt="Ícone Finalizados"> Finalizados</li>
             </ul> 
         </nav>
-
+        </div>
         <article>   
            <div class="tituloH3">
             <h3>Financeiro</h3>
@@ -57,5 +62,6 @@
             </section>
         </article>
     </main>
+    <script src="jav/acao.js"></script>
 </body>
 </html>
