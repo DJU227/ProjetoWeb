@@ -1,0 +1,87 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #0073aa;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    gap: 10px;
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+}
+
+.nav-btn {
+    background-color: #e6f0f5;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.search-bar {
+    flex-grow: 1;
+    max-width: 400px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+.profile-icon {
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+/* Corpo principal */
+main {
+    padding: 30px 20px;
+    background-color: #f4f4f4;
+    min-height: 400px;
+}
+
+.carousel-section {
+    background-color: #fff;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.carousel {
+    margin-top: 20px;
+    background-color: #ddd;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #f7b500;
+    padding: 10px;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    border-top: 5px solid #000;
+}
